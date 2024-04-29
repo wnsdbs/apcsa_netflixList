@@ -1,6 +1,6 @@
 import java.util.ArrayList;
-public class Movie
-{
+
+public class Movie {
 	static ArrayList<String> mov = new ArrayList<String>();
 	static ArrayList<String> des = new ArrayList<String>();
 	
@@ -10,16 +10,14 @@ public class Movie
 	private String genre;
 	static String desc;
 	
-	public Movie(String t, String y, String r, String g, String d)
-	{
+	public Movie(String t, String y, String r, String g, String d) {
 		movieTitle = t;
 		pubYear = y;
 		rating = r;
 		genre = g;
 		desc = d;
 	}
-	public static void main(String[] args) 
-	{	
+	public static void main(String[] args) {	
 		Movie m1 = new Movie("Big Hero 6", "2014", "PG", "Family", "When a criminal plot threatens the hi-tech metropolis of San Fransokyo,\n"
 				+ "brilliant young robotics whiz Hiro Hamada leaps into action with his tech-savvy friends,\n"
 				+ "and his robot companion Baymax in Disney Animation's adaptation of the popular Marvel Comics series...");
@@ -56,12 +54,9 @@ public class Movie
 
 		mov.add(m5.toString());
 		des.add(desc);
-	
-		
 	}
 	
-	public String toString()
-	{
+	public String toString() {
 		return movieTitle + " (" + pubYear + ") - " + rating + " - " + genre;
 	}
 }
